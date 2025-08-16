@@ -9,6 +9,8 @@ wheels/
 # Virtual environments
 .venv
 
-# images
-image/*.jpg
-image/*.png
+# images and calibration results
+*.jpg
+*.png
+*.pdf
+*.npz
