@@ -76,7 +76,9 @@ def generate_board_image():
 
 def main():
     parser = argparse.ArgumentParser(description="Generate a Calibration board.")
-    parser.add_argument("--visualize", action="store_true", help="Save corner visualization images.")
+    parser.add_argument(
+        "--visualize", action="store_true", help="Save corner visualization images."
+    )
     args = parser.parse_args()
 
     image = generate_board_image()
@@ -93,6 +95,7 @@ def main():
 
     # pil_img.save("calibration_board.png", dpi=(dpi, dpi))
     pil_img.save("calibration_board.pdf", dpi=(dpi, dpi))
+
 
 if __name__ == "__main__":
     main()
